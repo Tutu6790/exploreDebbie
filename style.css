@@ -1,0 +1,562 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Lato", sans-serif; 
+    padding: 0;
+    margin: 0;
+    /* line-height: 1/4;
+    word-spacing: 3px; */
+  }
+
+  .name {
+      color: rgb(4, 4, 87);
+      font-weight: bold;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(4, 4, 87);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #818181;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  #nav {
+      display: grid;
+      grid-template-columns:5fr 0.5fr 4fr;
+      padding: 10px;
+      background-color: rgb(4, 4, 87);
+      color: white;
+  }
+ h3 {
+     justify-content: right;
+    padding-left: 10%;
+    animation-name: slide;
+    animation-duration: 2s;
+
+     
+  }
+  #heading {
+    background-image: linear-gradient(to right, rgba(4, 4, 87, 0.7),rgba(4, 4, 87, 0.7)), url('image/38423f28b515ea748de2baaaa38e2acc-1-1200x480.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   min-height: max-content;
+    color: white;
+    text-align: center;
+    margin-top: -20.5px;
+    padding-top:18px ;
+    animation-name: slide;
+    animation-duration: 2s;
+ }
+ @keyframes slide {
+     0% {
+         transform: translateY(50px);
+     }
+     100% {
+         transform: translateY(0px);
+     }
+ }
+ @keyframes slides {
+     0% {
+         transform: translateX(60px);
+     }
+     100% {
+         transform: translateX(0px);
+     }
+ }
+ @keyframes slider {
+     0% {
+         transform: translateY(70px);
+     }
+     
+     100% {
+         transform: translateY(0px);
+     }
+ }
+ 
+   h1 {
+       font-size: 4em;
+       animation-name: slides;
+       animation-duration: 2s;
+       transition: 2s all ease-in;
+   }
+   #heading p {
+       font-size: 25px;
+       padding: 20px;
+       animation-name: slider;
+       animation-duration: 2s;
+       transition: 2s all ease;
+   }
+  a {
+      text-decoration: none;
+  }
+  .explore {
+      background-color: white;
+      color: rgb(4, 4, 87);
+    margin: 100px;
+      padding: 10px;
+      font-size: 2em;
+      width: 250px;
+      height: 150px;
+      border-radius: 3px;
+      transition: all 2s;
+      
+  }
+  .explore:hover {
+      background-color: rgb(4, 4, 87);
+      color: white;
+      border: 2px solid white;
+      transition: ease-in 1s;
+  }
+
+  /* About us */
+
+  #about {
+      text-align: center;
+      padding-top: 50px;
+  }
+  #about h1 {
+      margin-top: 20px;
+color: rgb(4, 4, 87);
+  }
+  #about p {
+      font-size: 1.5em;
+      text-align: center;
+      padding: 20px;
+      animation-name: slider;
+      animation-duration: 2s;
+      transition: 2s all ease;
+  }
+  .about_content {
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      padding: 10px;
+      margin: 20px;
+      
+  }
+  #gallery a {
+      border-radius: 5px;
+      border: 2px solid rgb(4, 4, 87);
+      font-size: 15px;
+      color:rgb(4, 4, 87);
+      padding: 10px;
+      transition: all ease 2s;
+  }
+  #gallery a:hover {
+      background-color: rgb(4, 4, 87);
+      color: white;
+      border: 2px solid rgb(212, 212, 212);
+      transition:  all ease 1s;
+  }
+ #about img {
+      height: 280px;
+      padding: 20px;
+  }
+
+  /* Cards */
+
+  .services-content {
+      display: grid;
+      grid-template-columns: 2fr 2fr 2fr;
+      padding: 20px;
+  }
+  #service h1 {
+      text-align: center;
+      color: rgb(4, 4, 87);
+  }
+  #service p {
+      text-align: center;
+      font-size: 20px;
+      padding: 20px;
+  }
+  .cards h2 {
+      font-size: 1.7em;
+      color: rgb(4, 4, 87);
+      text-align: center;
+  }
+  .icon {
+      font-size: 5em;
+      color: rgb(4, 4, 87);
+      text-align: center;
+  }
+  /* testimonies */
+  #testimony h1 {
+      text-align: center;
+      color: rgb(4, 4, 87);
+  }
+  .star {
+      display: grid;
+      grid-template-columns: 4fr 2fr 4fr;
+      padding: 20px;
+      margin: 20px;
+  }
+  #star {
+      color: rgb(4, 4, 87);
+      font-size: 3em;
+      text-align: center;
+      margin-bottom: 50px;
+  }
+  hr {
+      color: rgb(4, 4, 87);
+     width: 100%;
+      text-align: center;
+      margin-bottom: 50px;
+  }
+  
+
+/* form */
+#contacts {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    
+    
+}
+.form, #social {
+    background-color: silver;
+    padding: 20px;
+    border: 2px solid rgb(4, 4, 87);
+    margin: 20px;
+    ;
+    border-radius: 5px;
+}
+#contact h1{
+    color: rgb(4, 4, 87);
+    text-align: center;
+}
+.form {
+    padding: 20px;
+}
+label {
+    color: rgb(4, 4, 87);
+    font-size: 30px;
+}
+input{
+    height: 30px;
+    width: 60%;
+    border: none;
+    border-bottom: 2px solid rgb(4, 4, 87);
+}
+input[type="submit"]{
+    background-color: rgb(4, 4, 87);
+    color: white;
+    padding: 10px;
+    font-size: 2em;
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 100px;
+    width: 200px;
+}
+input[type="submit"]:hover {
+    background-color: white;
+    color: rgb(4, 4, 87);
+    border: 2px solid rgb(4, 4, 87);
+    transition: ease-in-out 1s;
+}
+h5 {
+    font-size: 2em;
+}
+.socials  i{
+    font-size: 4em;
+    margin: 10px;
+    padding: 20px;
+    color: rgb(4, 4, 87);
+}
+.socials i:hover {
+    opacity: 0.5;
+}
+textarea {
+    font-size: 20px;
+}
+
+footer  {
+    text-align: center;
+ padding: 20px;
+    background-color: rgba(158, 150, 150, 0.171);
+    color: rgb(4, 4, 87);
+    position: relative;
+    margin-top:  23vh;
+    bottom: -15px;
+    margin-bottom: 11px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* clients testimony section */
+#container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 20px;
+}
+
+
+#customer-name{
+  font-size: 2em;
+}
+#customer-text {
+  font-size: 15px;
+}
+
+.customer-card{
+background: transparent!important;
+text-align: center;
+border:0.05rem solid rgb(4, 4, 87);
+padding: 2em;
+position: relative;
+margin-top: 20%;
+}
+.img-card{
+    border: 2px solid rgb(4, 4, 87);
+border-radius: 50%;
+display: inline-block;
+margin-top: -55px;
+max-width: 150px;
+}
+.star-icon{
+color: rgb(4, 4, 87);
+}
+.quote-icon{
+font-size: 2rem;
+color: rgb(4, 4, 87);
+} 
+.prevBtn,.nextBtn{
+font-size: 1.5rem;
+/* padding: 0.1rem; */
+color:rgb(4, 4, 87);
+border:0.1rem solid rgb(4, 4, 87);
+display: inline-block;
+position: absolute;
+padding: 0.4rem;
+border-radius: 50%;
+transition: all 1s ease-in-out;
+margin: 25% 0 0 0;
+}
+.prevBtn{
+   margin-right: 80px;
+   
+   
+}
+.nextBtn{
+   margin-left: 80px;
+}
+.prevBtn:hover{
+background: rgb(4, 4, 87);
+color: white;
+
+}
+.nextBtn:hover{
+background: rgb(4, 4, 87);
+color: white;
+
+}
+
+
+@media (max-width: 700px) {
+.prevBtn,.nextBtn{
+    margin-top: 40%;
+}
+}
+
+@media (max-width: 450px) {
+.prevBtn,.nextBtn{
+    margin: 200px 0 0 0;
+    font-size: 15px;
+}
+.nextBtn{
+    margin-left: 40px;
+}
+#customer-text{
+    font-size: 10px;
+}
+#customer-name{
+    font-size: 15px;
+}
+.img-card{
+    max-width: 50px;
+    
+}
+.prevBtn{
+    margin-right: 30px;
+}
+#container{
+    grid-template-columns: 1fr 4fr 1fr;
+}
+.star-icon{
+    font-size: 10px;
+}
+}
+
+@media (max-width: 280px) {
+.prevBtn{
+    margin-right: 100%;
+}
+#customer-text{
+    font-size: 7px;
+}
+
+}
+
+@media only screen and (max-width:1000px) {
+    .test {
+        grid-template-columns: 2fr;
+        width: 100%;
+    }
+   
+}
+  @media only screen and (max-width:800px) {
+      
+      h1 {
+          font-size: 2em;
+      }
+     #heading p {
+          font-size: 20px;
+      }
+      .explore {
+          font-size: 25px;
+          padding: 15px;
+          
+      }
+      .about_content {
+          grid-template-columns: 2fr;
+      }
+      .services-content {
+          grid-template-columns: 2fr;
+      }
+      .icon {
+          font-size: 3.5em;
+      }
+      .test {
+          grid-template-columns: 2fr;
+          width: 100%;
+          margin: 0;
+      }
+      #about img {
+          width: 400px;
+      }
+      #contacts {
+          grid-template-columns: 2fr;
+          width: 100%;
+          margin: 0;
+      }
+      .form, #social {
+          width: 80%;
+      }
+      textarea {
+          width: 50%;
+          
+      }
+    }
+   
+
+   @media only screen and (max-width:480px) {
+    #heading h1 {
+        font-size: 20px;
+    }
+   #heading p {
+        font-size: 14px;
+        padding: 10px;
+    } 
+    #nav {
+        grid-template-columns: 1fr 1fr 5fr;
+    }
+    
+    .explore {
+       
+        height: 50px;
+        width:50px;
+        padding: 5px;
+        font-size: 12px;
+    }
+    #about {
+        padding-top: 10px;
+    }
+    .about_content {
+        font-size: 12px;
+        word-spacing: 1px;
+        line-height: 1/2;
+    }
+    #about p {
+        padding-top: 0px;
+    }
+    
+    .test img {
+        width: 150px;
+        height: 100px;
+    } 
+    .star {
+        display: none;
+    }
+    #about img {
+        width: 250px;
+        height: 200px;
+    }
+    #testimony {
+        padding: 10px;
+    }
+    #testimony h1 {
+        font-size: 29px;
+    }
+    #contact {
+        padding: 10px;
+    }
+    .test p, #about p, #service p {
+        font-size: 16px;
+    }
+    label {
+        font-size: 12px;
+    }
+    h5 {
+        font-size: 15px;
+    }
+    .socials  i{
+        font-size: 25px;
+        margin: 2px;
+        padding: 5px;
+    }
+    input[type="submit"] {
+       font-size: 20px;
+       padding: 5px;
+       height:80%;
+       width:50%;
+    }
+    textarea {
+        width: 90%;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore_Debbie</title>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+<!-- <script>
+  AOS.init({
+      offset: 400,
+      duration: 1000
+  });
+</script> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> --> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.min.css">
+    <!-- <script src="js/scrollmagic/minified/ScrollMagic.min.js"></script> -->
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+       
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a href="#service">Services</a>
+    </div>
+
+<div id="nav">
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<img src="image/1595626711404.png" alt="logo"style="height: 60px; width: 60px;">
+<h3>Explore_Debbie</h3>
+</div>
+<div id="heading" >
+    <h1 class="head">Creating Unforgettable Memories</h1>
+    <p>We are experts in events handling. We plan every detail of your event. Your satisfaction is our bussiness.</p>
+    <a href="#contact" class="explore">Explore</a>
+</div>
+<div id="about" >
+    <h1>ABOUT US</h1>
+    <div class="about_content">
+        <div class="abouttext" >
+            <p><span class="name">ExploreDebbie</span> is an organization, amied at relieving people the stress of events planning.
+                We are concerned about our customers satisfaction and we put in our best to make the best happen. <br>
+                <span>Your satisfaction is our bussiness.</span>
+                <div id="gallery">
+                    <a href="https://slidedebbie.netlify.app/" target = "_blank">View our image gallery</a>
+                </div>
+                
+            </p>
+        </div>
+        <div class="about-img">
+            <img src="image/1595623668977.png" alt="">
+        </div>
+    </div>
+</div>
+    <div id="service" >
+        <h1>OUR SERVICES</h1>
+        <div class="services-content">
+            <div class="cards">
+                <div class="icon"><i class="fas fa-certificate"></i></div>
+                <h2>HALL DECORATION</h2>
+                <P>We offer hall decorations services. We can beautify your hall just they way you like it.</P>
+            </div>
+            <div class="cards">
+                <div class="icon"><i class="fas fa-birthday-cake"></i></div>
+                <h2>CATERING SERVICES</h2>
+                <P>We also offer catering services. like, Baking of cakes for any occasions,
+                    cooking of dishes for any occasions and lots more!.
+                </P>
+            </div>
+            <div class="cards">
+                <div class="icon"><i class="fas fa-certificate"></i></div>
+                <h2>SUPRISE PARTIES</h2>
+                <P>Do you love suprise parties? Are you planing on organizing a suprise party for someone but you dont know how? 
+                    We can help you out with that!. We plan/organize suprise parties just the way you like it.
+                </P>
+            </div>
+        </div>
+    </div>
+
+    <div id="testimony">
+        <h1>CLIENT TESTIMONIES</h1>
+        <div class="star">
+        <hr>
+        <i id="star" class="fa fa-star" aria-hidden="true"></i>
+        <hr>
+        </div>
+
+        <div id="container">
+            <div class="prevIcon">
+                <a href="#" class="btn prevBtn"><i class="fas fa-chevron-left"></i></a>
+            </div>
+            <div class="customer-card">
+                <img src="image/test0.jpg"  id="customer-img" class="img-card">
+            <h3 id="customer-name">
+                Mr Joseph
+            </h3>
+                <span class="star-icon">
+                 <i class="fas fa-star"></i>
+                </span>
+                <span class="star-icon">
+                 <i class="fas fa-star"></i>
+                </span>
+                <span class="star-icon">
+                 <i class="fas fa-star"></i>
+                </span>
+                <span class="star-icon">
+                 <i class="fas fa-star"></i>
+                </span>
+                <span class="star-icon">
+                 <i class="fas fa-star-half"></i>
+                </span>
+               <p id="customer-text">I got married last year, my wife and i hired ExploreDebbieto help organize our weddding
+                Reception, and i can say, They were Splendid! The hall decorations was beautiful! Everything went perfectly well. <span class="name">ExploreDebbie </span>is the best!</p>
+               <span class="quote-icon">
+                <i class="fas fa-quote-left"></i>
+               </span>
+            </div>
+            <div class="nextIcon">
+                <a href="#" class="btn nextBtn"><i class="fas fa-chevron-right"></i></a>
+                </div>
+        </div>
+    
+
+         </div>
+
+     </div>
+    <div id="contact">
+        <h1>CONTACT US</h1>
+        <div id="contacts">
+        <div class="form">
+            <form id="myForm" name="myForm" onsubmit="validate()" method="post">
+            <label>
+                Full Name <br>
+                </label>
+            <input type="text"  name="name" id="name" placeholder="Full name.." required>
+            <br> 
+            <br>
+            <label class="number">
+                Phone Number <br>
+                </label>
+                <input type="number" name="number" id="num" required>
+            <br> <br>
+            <label class="email">
+               Email <br>
+                </label>
+            <input type="email" name="email" id="email"required>
+            <br> <br>
+            <label class="textarea">
+                Message <br>
+                </label>
+            <textarea name="message" id="message" cols="30" rows="10" maxlength="250" required></textarea>
+           <br> <br>
+            <input type="submit" value="Submit">
+    </form>
+        </div>
+
+        <div id="social">
+            <h5>Or reach out to us via  social media</h5>
+            <div class="socials">
+                <a href="#" target="_blank"> <i class="fab fa-facebook-square"></i></a>
+                <a href="#" target="_blank"> <i class="fab fa-twitter-square"></i></a>
+                <a href="#" target="_blank"> <i class="fab fa-instagram"></i></a>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+    <footer>
+        &copy; Copyright 2020 - <span class="name">ExploreDebbie.</span> Designed By <span class="name">Okonu_Deborah</span>
+    </footer>
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
