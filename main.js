@@ -30,12 +30,13 @@ function openNav() {
     var email = document.getElementById("email").value;
     var mess = document.getElementById("message").value;
     
-
-    if (name == Number) {
+   
+    if (isNaN(name)) {
+      alert("Congratulations!" + " " + name + ". " + " Your message has been sent successfully."+ " " + "We'll send an email to you within 24 hours at:" + " " + email + "." + " " + "Thanks for reaching out to us!")
+      return false;
+    } else {
       alert('Your name can\'t be a number');
       return false;
-    } else if (name !== Number) {
-      alert("Congratulations!" + " " + name + ". " + " Your message has been sent successfully."+ " " + "We'll send an email to you within 24 hours at:" + " " + email + "." + " " + "Thanks for reaching out to us!")
     }
     
 
@@ -80,7 +81,7 @@ function openNav() {
   
     
     createCustomer(0, 'John', 'I got married last year, my wife and i hired ExploreDebbieto help organize our weddding Reception, and i can say, They were Splendid! The hall decorations was beautiful! Everything went perfectly well. ExploreDebbie is the best!')
-    createCustomer(1, 'Sandy', 'I celebrated my birthday last month.i hired ExploreDebbieto help organize my birthday party and i can say, They were Splendid! Everything went perfectly well. ExploreDebbie is the best')
+    createCustomer(1, 'Sandy', 'I celebrated my birthday last month. i hired ExploreDebbieto help organize my birthday party and i can say, They were Splendid! Everything went perfectly well. ExploreDebbie is the best')
     createCustomer(2, 'Amy', ' I threw a suprise birthday party for my girlfriend and i hired ExploreDebbieto help organize the party and i can say, They were Splendid! Everything went perfectly well. My girlfriend said the cakes were yummy. The really planned the suprise so well that it was even a suprise to me. ExploreDebbie is the best!')
    
     

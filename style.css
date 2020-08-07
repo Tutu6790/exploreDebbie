@@ -170,6 +170,7 @@ color: rgb(4, 4, 87);
       color:rgb(4, 4, 87);
       padding: 10px;
       transition: all ease 2s;
+      max-width: auto;
   }
   #gallery a:hover {
       background-color: rgb(4, 4, 87);
@@ -292,6 +293,9 @@ h5 {
 }
 .socials i:hover {
     opacity: 0.5;
+    /* color: white;
+    background-color: rgb(4, 4, 87);
+    border-radius: 100%; */
 }
 textarea {
     font-size: 20px;
@@ -351,7 +355,7 @@ color: rgb(4, 4, 87);
 font-size: 1.5rem;
 /* padding: 0.1rem; */
 color:rgb(4, 4, 87);
-border:0.1rem solid rgb(4, 4, 87);
+/* border:0.1rem solid rgb(4, 4, 87); */
 display: inline-block;
 position: absolute;
 padding: 0.4rem;
@@ -550,6 +554,7 @@ color: white;
     textarea {
         width: 90%;
     }
+    
 }
 
 @media screen and (max-height: 450px) {
