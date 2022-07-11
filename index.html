@@ -2,190 +2,191 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portharcourt Event Management Organization">
+    <meta name="Keywords" content="Cake, Pastries, Portharcourt, Cupcakes, sell, buy, chow, event, planning, eventPlanning">
+    <meta name="author" content="ExploreDebbie">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore_Debbie</title>
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
-<!-- <script>
-  AOS.init({
-      offset: 400,
-      duration: 1000
-  });
-</script> -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> --> 
+    <title>ExploreDebbie</title>
+    <link rel="icon" href ="img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.min.css">
-    <!-- <script src="js/scrollmagic/minified/ScrollMagic.min.js"></script> -->
 </head>
 <body>
+  <!-- nav bar -->
+  <!-- nav bar -->
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #000b76; color: white;" >
+    <a class="navbar-brand" href="#" style="color: white;">Explore<span style="color: rgb(253, 81, 81);">Debbie</span></a>
+    <!-- <a class="navbar-brand logo" href="#about"><img src="image/logo.jpg"></a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+      <span class="navbar-toggler-icon" style="color: rgb(4, 4, 65);"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto" >
+        <li class="nav-item active">
+          <a class="nav-link home"  href="index.html"  style="color: white;">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link home" href="#about" style="color: white;">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link home" href="message.html" onclick="document.getElementById('modal').style.display = 'block'" style="color: white;">Contact Us</a>
+          </li>
+        <li class="nav-item dropdown"id="Explore"  >
+          <a  class="nav-link dropdown-toggle" href="#service" target="_blank" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+            Our Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item drop" href="#pastries" target="_blank">ExploreDebbie Pastries</a>
+            <a class="dropdown-item drop" href="#chow" target="_blank">ExploreDebbie Chow</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item drop" href="https://bit.ly/EDP_websaap">Place an order now!</a>
+          </div>
+        </li>
+        
 
-    <div id="mySidenav" class="sidenav">
-       
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">Home</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-  <a href="#service">Services</a>
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 search" type="submit">Search</button>
+          </form> -->
     </div>
-
-<div id="nav">
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-<img src="image/1595626711404.png" alt="logo"style="height: 60px; width: 60px;">
-<h3>Explore_Debbie</h3>
+  </nav>
+<div id="heading">
+    <div id="headContent">
+    <h1 class="head">Hello <span id="name"></span>, Welcome To ExploreDebbie! </h1>
+    <p>Here we create Unforgettable Memories...</p>
+    <a href="#service" class="explore">Explore</a>
 </div>
-<div id="heading" >
-    <h1 class="head">Creating Unforgettable Memories</h1>
-    <p>We are experts in events handling. We plan every detail of your event. Your satisfaction is our bussiness.</p>
-    <a href="https://slidedebbie.netlify.app/" class="explore" target = "_blank">Explore</a>
+   
 </div>
 <div id="about" >
     <h1>ABOUT US</h1>
-    <div class="about_content">
+    <div class="about_content card">
         <div class="abouttext" >
-            <p><span class="name">ExploreDebbie</span> is an organization, amied at relieving people the stress of events planning.
-                We are concerned about our customers satisfaction and we put in our best to make the best happen. <br>
-                <span>Your satisfaction is our bussiness.</span>
-                <div id="gallery">
-                    <a href="https://slidedebbie.netlify.app/" target = "_blank">View our image gallery</a>
-                </div>
-                
+            <p><span class="name">ExploreDebbie</span> is an organization, amied at relieving people the stress of event planning by providing them with different services they might
+              need to make their event a success. We are concerned about our customers satisfaction and we put in our best to make the best happen.
+             <br> For now, we have just two services/sections launched. Which are; <a href="#" class="ser">ExploreDebbie Pastries</a> and <a href="#" class="ser">ExploreDebbie Chow.</a>
+              We hope this helps to make your event a success. Feel free to send us a direct message <a href="#" class="mess">here</a>
+                <div id="menu">
+                    <a href="#service" target = "_blank">Explore to know more!</a>
+                </div>    
             </p>
-        </div>
-        <div class="about-img">
-            <img src="image/1595623668977.png" alt="">
         </div>
     </div>
 </div>
     <div id="service" >
         <h1>OUR SERVICES</h1>
         <div class="services-content">
-            <div class="cards">
-                <div class="icon"><i class="fas fa-certificate"></i></div>
-                <h2>HALL DECORATION</h2>
-                <P>We offer hall decorations services. We can beautify your hall just they way you like it.</P>
-            </div>
-            <div class="cards">
-                <div class="icon"><i class="fas fa-birthday-cake"></i></div>
-                <h2>CATERING SERVICES</h2>
-                <P>We also offer catering services. like, Baking of cakes for any occasions,
-                    cooking of dishes for any occasions and lots more!.
-                </P>
-            </div>
-            <div class="cards">
-                <div class="icon"><i class="fas fa-certificate"></i></div>
-                <h2>SUPRISE PARTIES</h2>
-                <P>Do you love suprise parties? Are you planing on organizing a suprise party for someone but you dont know how? 
-                    We can help you out with that!. We plan/organize suprise parties just the way you like it.
-                </P>
-            </div>
-        </div>
-    </div>
-
-    <div id="testimony">
-        <h1>CLIENT TESTIMONIES</h1>
-        <div class="star">
-        <hr>
-        <i id="star" class="fa fa-star" aria-hidden="true"></i>
-        <hr>
-        </div>
-
-        <div id="container">
-            <div class="prevIcon">
-                <a href="#" class="btn prevBtn"><i class="fas fa-chevron-left"></i></a>
-            </div>
-            <div class="customer-card">
-                <img src="image/test0.jpg"  id="customer-img" class="img-card">
-            <h3 id="customer-name">
-                Mr Joseph
-            </h3>
-                <span class="star-icon">
-                 <i class="fas fa-star"></i>
-                </span>
-                <span class="star-icon">
-                 <i class="fas fa-star"></i>
-                </span>
-                <span class="star-icon">
-                 <i class="fas fa-star"></i>
-                </span>
-                <span class="star-icon">
-                 <i class="fas fa-star"></i>
-                </span>
-                <span class="star-icon">
-                 <i class="fas fa-star-half"></i>
-                </span>
-               <p id="customer-text">I got married last year, my wife and i hired ExploreDebbieto help organize our weddding
-                Reception, and i can say, They were Splendid! The hall decorations was beautiful! Everything went perfectly well. <span class="name">ExploreDebbie </span>is the best!</p>
-               <span class="quote-icon">
-                <i class="fas fa-quote-left"></i>
-               </span>
-            </div>
-            <div class="nextIcon">
-                <a href="#" class="btn nextBtn"><i class="fas fa-chevron-right"></i></a>
+            <div class="cards card" id="pastries">
+                <h2>PASTRIES</h2>
+                <P>Hello dear, welcome to <span class="name">ExploreDebbie Pastries.</span> Here we sell cakes and pastries of all kinds (Ranging from Cupcakes,
+                cakes, small-chops, cake parfait, brownies, fried chicken etc). Deliciously and beautifully made, just the way you will love it.
+                <div class="menu">
+                  <a href="https://bit.ly/ExploreDebbie_Pastries" id="menulink">See our menu/Place an order</a>
                 </div>
-        </div>
-    
-
-         </div>
-
-     </div>
-    <div id="contact">
-        <h1>CONTACT US</h1>
-        <div id="contacts">
-        <div class="form">
-            <form id="myForm" name="myForm" onsubmit="validate()" method="post">
-            <label>
-                Full Name <br>
-                </label>
-            <input type="text"  name="name" id="name" placeholder="Full name.." required>
-            <br> 
-            
-            <br>
-            <label class="number">
-                Phone Number <br>
-                </label>
-                <input type="number" name="number" id="num" required>
-            <br> <br>
-            <label class="email">
-               Email <br>
-                </label>
-            <input type="email" name="email" id="email"required>
-            <br> <br>
-            <label class="textarea">
-                Message <br>
-                </label>
-            <textarea name="message" id="message" cols="30" rows="10" maxlength="250" required></textarea>
-           <br> <br>
-            <input type="submit" value="Submit">
-    </form>
-        </div>
-
-        <div id="social">
-            <h5>Or reach out to us via  social media</h5>
-            <div class="socials">
-                <a href="https://bit.ly//Debbyfb" target="_blank"> <i class="fab fa-facebook"></i></a>
-                <a href="https://bit.ly//TwitterDebby" target="_blank"> <i class="fab fa-twitter"></i></a>
-                <a href="https://bit.ly/debbyInsta" target="_blank"> <i class="fab fa-instagram"></i></a>
-                <a href="https://bit.ly/3fZ2D0w" target="_blank"> <i class="fab fa-whatsapp-square"></i></a>
-                <a href="mailto:okonudeborah28@gmail.com" target="_blank"> <i class="fas fa-envelope-square"></i></a>
+              </P>
                 
             </div>
-            
-            <h5>Additional links</h5>
-            <div id="gallery">
-                <a href="https://bit.ly/exploredebbie" target = "_blank">See somthing cool</a>
-            </div><br><br><br>
-            <div id="gallery">
-                <a href="https://bit.ly/Numbguess" target = "_blank">Play a game</a>
+            <div class="cards card" id="chow">
+                <h2>CHOW</h2>
+                <P>Hello dear, welcome to <span class="name">ExploreDebbie Chow.</span> Here we make the edible incredible with our delicious and well packaged food tray and ready-to-go lunch packs.
+                  <div class="menu">
+                    <a href="https://bit.ly/ExploreDebbie_Pastries" id="menulink">See our menu/Place an order</a>
+                  </div>
+                </P>
             </div>
         </div>
-        </div>
     </div>
+
+     <div id="reviews">
+        <h2> Customer Reviews</h2>
+        <div class="small">
+  
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active ">
+                <img class="d-block w-100 carousel-img " src="img/revie1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 carousel-img" src="img/review 10.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 carousel-img" src="img/review 6.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 carousel-img" src="img/review.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 carousel-img" src="img/review2.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 carousel-img" src="img/review4.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 carousel-img" src="img/review5.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 carousel-img" src="img/review7.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 carousel-img" src="img/review8.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <br>
+          <div class="menu">
+          <a href="message.html" id="menulink">Message Us</a>
+        </div>
+        </div>
+       
+        </div>
+        <br>
+
+
     <footer>
-        &copy; Copyright 2020 - <span class="name">ExploreDebbie.</span> Designed By <span class="name">Okonu_Deborah</span>
+        <div id="foot">
+          <div class="h4">
+              <h4 id="contactus">Contact us</h4>
+              <ul>
+                  <li><a href="https://bit.ly/edp-facebook" target="_blank">Facebook</a></li>
+                  <li> <a href="https://bit.ly/EDP_websaap" target="_blank">Whatsapp</a></li>
+                  <li> <a href="mailto:exploredebbie@gmail.com" target="_blank">Email Us</a></li>
+                  <li> <a href="https://bit.ly/edp-instagram" target="_blank">Instagram</a></li>
+                  <li> <a href="https://bit.ly/edp-twitter" target="_blank">Twitter</a></li>
+              </ul>
+            </div>
+         <div class="end">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li> <a href="#about">About</a></li>
+            <li> <a href="#service" target="_blank">Our Services</a></li>
+            <li> <a href="https://bit.ly/EDP_websaap" target="_blank">Order Now</a></li>
+        </ul>
+             <p class="big">We create Unforgettable Memories...</p>
+         </div>
+        </div>
+        <p class="footer">
+          &copy; Copyright 2022 - ExploreDebbie.Designed By Okonu Deborah
+        </p>
+    
     </footer>
 
 
 
-
+    <script src="jquery.min.js"></script>
+    
+    <script src="bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
