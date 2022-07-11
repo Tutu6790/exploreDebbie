@@ -6,7 +6,7 @@ function welcomeText() {
         document.getElementById("name").innerHTML = name;
         console.log(localStorage.setItem("name", name));
     }
-    if (name == null || name == undefined) {
+    if (name == null || name == "") {
         document.getElementById("name").innerHTML = "dear";
     }
     

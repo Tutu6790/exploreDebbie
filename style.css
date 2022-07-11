@@ -238,9 +238,17 @@ footer {
 .h4 ul li {
     list-style-type: none;
 }
+.serveimg img {
+    text-align: center;
+    width: 20%;
+    height: 90%;
+    border-radius: 100%;
 
+}
 
-
+.messagebox {
+    text-align: center;
+}
 /* media queries */
 @media screen and (max-width: 702px) {
     h1, #reviews h2, #message h2 {
@@ -263,3 +271,10 @@ footer {
    .services-content {
        grid-template-columns: 2fr;
    }
+.messagebox {
+    width: 100%;
+}
+.serveimg img {
+    width: 30%;
+    height: 77%;
+}
