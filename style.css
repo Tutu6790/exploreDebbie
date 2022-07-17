@@ -11,6 +11,21 @@ body {
     /* line-height: 1/4;
     word-spacing: 3px; */
   }
+  .logo img {
+    width:40px;
+    height:40px;
+    border-radius:5px;
+    animation-name: example;
+        animation-duration: 3s;
+    }
+    .logo img:hover {
+        border-radius:100%;
+        width:70px;
+        height:70px;
+        transition: ease-in-out 1s;
+    
+    }
+    
  /* animations */
  @keyframes slide {
      0% {
@@ -57,11 +72,7 @@ body {
   animation-duration: 2s; 
 
   }
-  .logo img {
-      border-radius: 50%;
-      width: 10%;
-      height: 10%
-  }
+  
  
    h1 {
        font-size: 3em;
