@@ -1,30 +1,58 @@
+/* ===================== Reset & Base ===================== */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
-    font-family: "Lato", sans-serif; 
+    font-family: 'Lora', serif;
     padding: 0;
     margin: 0;
     /* line-height: 1/4;
     word-spacing: 3px; */
   }
-  .logo img {
-    width:40px;
-    height:40px;
-    border-radius:5px;
-    animation-name: example;
-        animation-duration: 3s;
-    }
-    .logo img:hover {
-        border-radius:100%;
-        width:70px;
-        height:70px;
-        transition: ease-in-out 1s;
-    
-    }
+  h1, h2, h3, .cards h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ===================== Navbar ===================== */
+.navbar {
+    background-color: #f2f2f3;
+}
+.navbar .nav-link {
+    color: #000b76 !important;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.navbar .nav-link:hover {
+    color: rgb(248, 15, 205) !important;
+}
+.navbar .dropdown-menu {
+    background-color: #000b76;
+}
+.navbar .dropdown-item {
+    color: white;
+}
+.navbar .dropdown-item:hover {
+    background-color: rgb(248, 15, 205);
+    color: #f2f3f4;
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s ease-in-out;
+}
+.logo img:hover {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+ 
     
  /* animations */
  @keyframes slide {
@@ -54,127 +82,137 @@ body {
  }
  /* heading  */
  .name {
-    color: rgb(4, 4, 87);
+    color: rgb(248, 15, 205);
     font-weight: bold;
 }
   #heading {
-  background-image: linear-gradient(to bottom, rgba(30, 30, 99, 0.856), rgba(7, 5, 5, 0.445)), url("img/38423f28b515ea748de2baaaa38e2acc-1-1200x480.jpg");
-  /* background-image: linear-gradient(to bottom, rgba(3, 2, 2, 0.616), rgba(3, 3, 3, 0.548)), url(img/netflix-image.jpg); */
-  background-repeat: no-repeat;
+  background: linear-gradient(to bottom, rgba(2, 40, 156, 0.7), rgba(7, 7, 8, 0.7)), url("img/38423f28b515ea748de2baaaa38e2acc-1-1200x480.jpg") center/cover no-repeat;
+    /* background: linear-gradient(to bottom, rgb(243, 73, 211), #000b76), url("img/38423f28b515ea748de2baaaa38e2acc-1-1200x480.jpg") center/cover no-repeat; */
   color: white;
-  background-size: cover;
-  object-fit: cover;
-  background-position: 0px;
-  padding: 20px;
-  margin: auto;
-  text-align: center;
-  animation-name: slide;
-  animation-duration: 2s; 
+    text-align: center;
+    padding: 100px 20px;
 
   }
-  
  
-   h1 {
-       font-size: 3em;
-       animation-name: slides;
-       animation-duration: 2s;
-       transition: 2s all ease-in;
-       
-   }
-   #heading p {
-       font-size: 25px;
-       padding: 20px;
-       animation-name: slider;
-       animation-duration: 2s;
-       transition: 2s all ease;
-   }
+   #headContent h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: slideDown 1.2s ease-out;
+}
+   #headContent p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-out;
+}
   a {
       text-decoration: none;
   }
-  .explore {
-      background-color: white;
-      color: rgb(4, 4, 87);
-      margin: 100px;
-      padding: 10px;
-      font-size: 1.2em;
-      width: 250px;
-      height: 150px;
-      border-radius: 3px;
-      transition: all 2s;
-      
-  }
-  .explore:hover {
-      background-color: rgb(4, 4, 87);
-      color: white;
-      border: 2px solid white;
-      transition: ease-in 1s;
-  }
-.card {
+ .explore {
+    display: inline-block;
+    background-color: white;
+    color: #000b76;
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.explore:hover {
+    background-color: rgba(193, 76, 225, 0.7);
+    color: #d1d1d7;
+    border: 2px;
+}
+/* ===================== About Section ===================== */
+/* .card {
     border-radius: 10px;
     text-align: center;
     padding: 7px;
-    /* box-shadow: -2px 3px 3px 0px rgb(10 10 10 / 95%); */
     box-shadow: -2px -1px 7px 0px rgba(143, 139, 139, 0.95);
 
-}
-  /* About us */
-
+} */
   #about {
-      text-align: center;
-      padding-top: 50px;
-  }
-  #about h1 {
-      margin-top: 20px;
-    color: rgb(4, 4, 87);
-    font-weight: 600;
+    background-color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+#about h1 {
+    color: #000b76;
+    font-size: 2.5rem;
+    /* margin-bottom: 20px; */
     text-decoration: underline;
-  }
-  #about p {
-      font-size: 1.3em;
-      text-align: center;
-      padding: 20px;
-      animation-name: slider;
-      animation-duration: 2s;
-      transition: 2s all ease;
-  }
-  .about_content {
-      padding: 10px;
-      margin: 20px;
-      
-  }
-  #menu a {
-      border-radius: 5px;
-      border: 2px solid rgb(4, 4, 87);
-      font-size: 15px;
-      color:rgb(4, 4, 87);
-      padding: 10px;
-      transition: all ease 2s;
-      max-width: auto;
-      text-align: center;
-  }
-  #menu a:hover {
-      background-color: rgb(4, 4, 87);
-      color: white;
-      border: 2px solid rgb(212, 212, 212);
-      transition:  all ease 1s;
-  }
+    font-weight: bold;
+}
 
+.about_content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.about_content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    animation-name: slider;
+    animation-duration: 2s;
+    transition: 2s all ease;
+}
+#menu a {
+    display: inline-block;
+    border: 2px solid #000b76;
+    color: #000b76;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-decoration: none;
+}
 
-  /* Cards service */
+#menu a:hover {
+    background-color: rgb(248, 15, 205);
+    color: #000b76;
+    border: none;
+}
 
-  .services-content {
-      display: grid;
-      grid-template-columns: 2fr 2fr;
-      grid-gap: 15px;
-      padding: 20px;
-  }
-  #service h1 {
-      text-align: center;
-      color: rgb(4, 4, 87);
-      font-weight: 600;
-      text-decoration: underline;
-  }
-  #service h2 {
+  /* ===================== Services Section ===================== */
+#service {
+    padding: 40px 20px;
+}
+
+#service h1 {
+    text-align: center;
+    color: #000b76;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+  /* .services-content {
+   display: grid;
+    grid-template-columns: repeat(3, 2fr); 4 cards side by side
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+} */
+.services-content {
+    grid-template-columns: 2fr;
+}
+
+.cards {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.cards:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+ 
+  /* #service h2 {
        text-decoration: underline;
        font-weight: 600;
   }
@@ -182,39 +220,45 @@ body {
         text-align: center;
       font-size: 20px;
       padding: 20px;
-  }
+  } */
   .cards h2 {
-      font-size: 2em;
-      color: rgb(4, 4, 87);
-      text-align: center;
-    
-  }
-  #menulink {
-    border-radius: 5px;
-    border: 2px solid rgb(4, 4, 87);
-    font-size: 15px;
-    color:rgb(4, 4, 87);
-    padding: 10px;
-    transition: all ease 2s;
-    max-width: auto;
-    
-  }
-
-
-  #menulink:hover {
-    background-color: rgb(4, 4, 87);
-    color: white;
-    border: 2px solid rgb(212, 212, 212);
-    transition:  all ease 1s;
-  }
-  /* reviews */ 
-  #reviews h2, #message h2 {
-    text-align: center;
-    color: rgb(4, 4, 87);
-    font-size: 2.7em;
+    color: #000b76;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
     font-weight: 600;
+}
+.cards p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+ #menulink {
+    display: inline-block;
+    border: 2px solid #000b76;
+    color: #000b76;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+#menulink:hover {
+    background-color: rgb(248, 15, 205);
+    color: #000b76;
+    border: none;
+}
+
+ /* ===================== Reviews Section ===================== */
+#reviews {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+    text-align: center;
+}
+  #reviews h2 {
+    color: #000b76;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
     text-decoration: underline;
-  }
+    font-weight: bold;
+}
     .carousel-item img {
         border-radius: 5px;
         width: 20%;
@@ -227,23 +271,7 @@ body {
         margin-bottom: 8px ;
     }
 
-/* foooter */
-footer {
-    /* background-color: #010113; */
-    background-color:rgb(4, 4, 65);
-    color: white;
-}
-#foot {
-    display:grid;
-    grid-template-columns: 2fr 2fr;
-    padding: 15px;
-}
-.hr {
-    background-color: #02023d;
-    height: 5px;
-    margin-bottom: 7px;
-
-}
+    /* ===================== Scroll to Top ===================== */
 #myBtn {
     display: none;
     position: fixed;
@@ -252,17 +280,55 @@ footer {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: rgba(25, 25, 177, 0.986);
+    background-color: #303ebd;
     color: white;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
+    padding: 12px 18px;
+    border-radius: 50%;
     font-size: 18px;
-    font-size: 20px;
+    transition: 0.3s ease;
 }
+
 #myBtn:hover {
-opacity: 0.5
+    background-color: rgb(248, 15, 205);
+    color: #000b76;
 }
+
+/* foooter */
+footer {
+    /* background-color: #010113; */
+    background-color:#000b76;
+    color: white;
+}
+#foot {
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 15px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+footer a:hover {
+    color: rgb(248, 15, 205);
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer p {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+.hr {
+    background-color: #02023d;
+    height: 5px;
+    margin-bottom: 7px;
+
+}
+
 .footer {
     text-align: center;
     padding: 20px;
@@ -278,6 +344,20 @@ opacity: 0.5
     padding: 2px;
     border-radius: 5px;
     font-size: 10px;
+}
+
+/* message us */
+#message {
+    background-color: rgb(232, 188, 224);
+    padding: 80px 20px;
+    text-align: center;
+}
+  #message h2 {
+    color: #f9fafd;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-decoration: underline;
+    font-weight: bold;
 }
 .end {
     font-size: 20px;
@@ -306,10 +386,12 @@ opacity: 0.5
     margin-bottom: -47px;
 }
 
-.messagebox {
+/* .messagebox {
     text-align: center;
-}
+} */
 /* media queries */
+
+
 @media screen and (max-width: 702px) {
     h1, #reviews h2, #message h2 {
         font-size: 30px;
@@ -325,11 +407,11 @@ opacity: 0.5
 #service h2 {
     text-decoration: underline;
     font-weight: 600;
-}
-}
+}}
+/* }
 
    .services-content {
-       grid-template-columns: 2fr;
+       grid-template-columns: 1fr;
    }
 .messagebox {
     width: 150;
@@ -340,4 +422,34 @@ opacity: 0.5
 }
 .serveimg {
     margin-bottom: 0px;
+} */
+
+/* ================= SERVICES GRID FIX ================= */
+
+#service .services-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 30px;
+}
+
+#service .cards {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    #service .services-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    #service .services-content {
+        grid-template-columns: 1fr;
+    }
 }
